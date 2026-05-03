@@ -32,9 +32,6 @@ body{
     .nav-link{
         font-size: 5px;
     }
-    .header{
-        flex-direction: column;
-    }
     .nav-box{
         display: none;
     }
@@ -55,6 +52,57 @@ body{
     }
 }
 
+@media(max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    .nav-box {
+        display: none; 
+    }
+    .main.fl {
+        flex-direction: column;
+        text-align: left;
+    }
+    .auth-name {
+        font-size: 27px;
+    }
+
+    .auth-about {
+        font-size: 27px;
+        margin-bottom: 20px;
+    }
+
+    .auth-descrip {
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+    .auth-link-box {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .auth-banner {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .auth-link { 
+        width: 50%;
+        font-size: 18px;
+        padding: 12px;
+        text-align: center;
+    }
+    .right-col {
+        width: 100%;
+    }
+    .logo-img {
+        width: 80px;
+    }
+}
 
 .nav-list{
     list-style: none;
